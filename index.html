@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <link rel="stylesheet" href="css/app.css" />
+    <
+    <script type="text/javascript" src="js/styler.js"></script>
+  </head>
+  <body>
+    <pre id="location">
+    </pre>
+    <nav id="sidenav">
+      <div class="container nav-container">
+        <div class="row text-center">
+          <h2>Rui's Map</h2>
+          <hr />
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+             <input type="text"
+                    class="form-control"
+                    data-bind="value: currentFilter,valueUpdate: 'keyup'"
+                    placeholder="Search for Place...">
+          </div>
+        </div>
+        <div class="row text-center">
+          <h3>Locations</h3>
+        </div>
+        <div class="row">
+          <ul id="location-list" data-bind="foreach: mapLocations">
+            <li class="list-location-item"><p data-bind="click: $parent.toggleFavorite,css: {favorite: $data.favorite() == true}" class="glyphicon glyphicon-star text-right"></p><p class="list-text" data-bind="text: $data.name, click: $parent.findAndOpenMarker"></p></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="topnav">
+      <div class="container">
+        <div class="row">
+          <button id="hamburger-button" type="button">
+              <img id="hamburger-icon" src="img/hamburger-icon.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+          <div style="position:fixed;top:0px;height:100%;width:100%">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+    <!-- Script Tags -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=GOOGLE_MAPS_API_KEY&callback=initMap"
+    defer async></script>
+     <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
+     <script type="text/javascript" src="js/app.js" defer async></script>
+  </body>
+</html>

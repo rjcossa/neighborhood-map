@@ -1,0 +1,37 @@
+{
+  "Mall Of Africa" : {
+    "favorite" : false,
+    "location" : {
+      "lat" : -26.01546,
+      "lng" : 28.106832
+    }
+  },
+  "Neighborgoods Market" : {
+    "favorite" : false,
+    "location" : {
+      "lat" : -26.205159965897053,
+      "lng" : 28.0201611817271
+    }
+  },
+  "Vodacom World Events" : {
+    "favorite" : false,
+    "location" : {
+      "lat" : -25.970074,
+      "lng" : 28.127999
+    }
+  },
+  "Taboo NightClub" : {
+    "favorite" : false,
+    "location" : {
+      "lat" : -26.101708,
+      "lng" : 28.057299
+    }
+  },
+  "Eastgate Mall" : {
+    "favorite" : false,
+    "location" : {
+      "lat" : -26.101708,
+      "lng" : 28.118207
+    }
+  }
+}

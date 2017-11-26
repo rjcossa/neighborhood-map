@@ -1,0 +1,143 @@
+body,html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+hr {
+  width: 80%;
+}
+
+#topnav > .container {
+  margin-left: 0px;
+}
+
+#location-list {
+  margin-top: 10px;
+  padding: 10px 0 10px 0;
+}
+
+
+.list-location-item:first-of-type {
+  border-top: 1px solid;
+  border-color: #cac8c8;
+}
+.list-location-item {
+  max-height: 80px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid;
+  border-color: #cac8c8;
+}
+
+.list-location-item:hover {
+  background-color: #15589c;
+  cursor: pointer;
+}
+
+#hamburger-button {
+  border: none;
+  outline: none;
+  background:none;
+  font-size: 10px;
+  margin:10px;
+}
+
+div.nav-container {
+  width:250px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #0B2D75;
+}
+
+.btn-primary:hover {
+  background-color: #0B2D75;
+  border-color: #fff;
+}
+
+div#infowindow {
+  color:black;
+  font-weight: 600;
+}
+
+#hamburger-icon {
+  width:25px;
+  height:25px;
+}
+
+.favorite {
+  color: yellow;
+}
+
+.glyphicon:hover {
+  color: yellow;
+}
+
+p.list-text {
+  margin-right: 40px;
+}
+
+.glyphicon {
+  margin-right:15px;
+  float:right;
+  font-size:20px;
+}
+
+.twoLineText {
+  margin-top: 12px;
+}
+
+#topnav {
+  bottom:0;
+  transition: left 400ms ease;
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:250px;
+  background: #0b2c69;
+  height:50px;
+  z-index: 9;
+}
+
+#map {
+  height: 100%;
+  transition: left 400ms ease;
+  left: 249px;
+  top:49px;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+}
+#info-heading {
+  color: red;
+}
+.wikipedia-list {
+  padding-left: 0px;
+  margin-top:15px;
+}
+
+#sidenav.closed-nav {
+  left: -250px;
+}
+#topnav.expanded-element {
+  left:0;
+}
+#map.expanded-element {
+  left:0;
+}
+
+#sidenav {
+  transition: left 400ms ease;
+  background: #2273d8;
+  bottom: 0;
+  overflow-y:auto;
+  position:fixed;
+  left:0;
+  width:250px;
+  height:100%;
+  z-index:10;
+}
