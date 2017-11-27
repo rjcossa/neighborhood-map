@@ -1,8 +1,8 @@
 var FOURSQUARE_CREDENTIALS = {
-  client_id: 'client_id',
-  client_secret: 'client_secret'
+  client_id: 'QZHIJTZO2JDR4GXED4LRI3SQEAHQCE10VEVRWXIIJR4YFWQ3',
+  client_secret: 'LQPXSJP4CWDZHTXL1IISZQ00AK0DKRCDCDE4A3CE4JNUIJLT'
 };
-var FLICKR_KEY = 'FLICKR_KEY';
+var FLICKR_KEY = '6fec74a54921e6b24824fcd095728553';
 /*
   Adding Locations in South Africa
 */
