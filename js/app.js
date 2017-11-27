@@ -144,10 +144,10 @@ var MapViewModel = function() {
         //Check if the user input is a substring of the marker's title
         if(marker.title.toLowerCase().indexOf(self.currentFilter().toLowerCase())  === -1) {
           //Remove the marker from the map
-          marker.setMap(null);
+          marker.setVisible(false);
         } else {
           //Add the marker to the map
-          marker.setMap(map);
+          marker.setVisible(true);
         }
     });
 

@@ -29,6 +29,10 @@ var map;
    highlightedIcon = makeMarkerIcon('FFFF24');
  }
 
+ function handleError() {
+   alert('The Map Was unable to load please refresh the page to continue')
+ }
+
  function populateInfoWindow(marker, infowindow) {
 
    // Check to make sure the infowindow is not already opened on this marker.
